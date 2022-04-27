@@ -21,7 +21,7 @@ const HomeIcon = createSvgIcon(
   'Home',
 );
 
-const pages = ['카운터', '계산기', 'BMI', '게시판'];
+const pages = [ '카운터', '계산기', 'BMI', '게시판'];
 const preSettings = ['회원가입', '로그인'];
 const postSettings = ['프로필', '정보수정', '로그아웃', '회원탈퇴'];
 
@@ -110,7 +110,7 @@ export default function Nav(){
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
@@ -122,8 +122,9 @@ export default function Nav(){
                 },
               }}
             >
-              <HomeIcon />
-              <HomeIcon color="primary" />
+              <a href='/' >
+              <HomeIcon color="primary" sx={{ my: 0, color: 'white', display: 'block' }}/>
+              </a>
             </Box>
           </Typography>
 
